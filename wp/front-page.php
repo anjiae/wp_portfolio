@@ -55,9 +55,9 @@
       <div class="link__contents__text">
         <h3 class="title-md sign">Portfolios</h3>
         <p class="font">
-          I have prepared my own website and WordPress theme.
+          I have prepared my created website and WordPress theme.
         </p>
-        <a href="https://portfolio.angielife.com/main/portfolios/" class="btn-primary">View portfolios</a>
+        <a href="https://portfolio.angielife.com/portfolio/">View portfolios</a>
       </div>
     </div>
   </div>
