@@ -1,0 +1,514 @@
+/* ---------------------------------------------------------------
+-------------- PAGE - ABOUT --------------------------------------
+---------------------------------------------------------------- */
+#p-about {
+  background-color: var(--color-beige);
+}
+#p-about .containerBox {
+  max-width: 100%;
+}
+#p-about .profile {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+#p-about .profile .profile__imgs {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: repeat(5, 100px);
+  z-index: 2;
+}
+
+#p-about .profile__imgs .image01 {
+  grid-column: 2 / span 6;
+  grid-row: 1 / span 4;
+}
+#p-about .profile__imgs .image02 {
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 3;
+}
+#p-about .profile__imgs .profileImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#p-about .profile .profile__text {
+  width: 50%;
+  margin-left: 20px;
+}
+#p-about .profile .profile__text .title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+#p-about .profile .profile__text .font {
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+
+/* About My various experience */
+#p-about .experience {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#p-about .experience .imgBox {
+  width: 100%;
+  height: 200px;
+}
+#p-about .experience .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#p-about .experience .text {
+  width: 100%;
+  background-color: var(--color-green);
+  padding: 30px 0;
+  text-align: center;
+}
+#p-about .experience .text .title-md {
+  margin-bottom: 20px;
+}
+#p-about .experience .text .font {
+  width: 80%;
+  margin: 7px auto;
+}
+#p-about .experience .text .btn-secondary {
+  margin-top: 20px;
+}
+
+/* About - get in touch */
+#p-about .getInTouch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+#p-about .getInTouch .getInTouch__text {
+  width: 30%;
+  text-align: right;
+  margin-right: 20px;
+}
+#p-about .getInTouch .getInTouch__text .font-sm {
+  margin: 20px 0;
+  line-height: 1.6em;
+}
+#p-about .getInTouch .getInTouch__text .btn-primary {
+  background-color: transparent;
+  color: var(--color-navy);
+  border: 1px solid var(--color-navy);
+  border-radius: 2px;
+}
+#p-about .getInTouch .getInTouch__text .btn-primary:hover {
+  background-color: var(--color-navy);
+  color: var(--color-beige);
+}
+#p-about .getInTouch .getInTouch__img {
+  width: 40%;
+  position: relative;
+  margin-top: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#p-about .getInTouch .getInTouch__img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(241, 233, 229, 0.1);
+}
+#p-about .getInTouch .getInTouch__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ---------------------------------------------------------------
+-------------- PAGE - WORKS --------------------------------------
+---------------------------------------------------------------- */
+#p-works .containerBox {
+  max-width: 100%;
+}
+
+#p-works .works__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-beige);
+}
+#p-works .works__description .title {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+#p-works .works__description .title .title-md {
+  font-family: 'Dancing Script', cursive;
+}
+#p-works .works__description .imgBox {
+  width: 50%;
+}
+#p-works .works__description .imgBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(241, 233, 229, 0.2);
+}
+#p-works .works__description .imgBox::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background: url(../images/works/my/DSC02242.JPG) no-repeat center/cover;
+}
+#p-works .works__description .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+#p-works .works__description .textBox {
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#p-works .works__description .textBox .font {
+  margin-bottom: 10px;
+}
+#p-works .works__description .textBox .font:last-child {
+  margin-bottom: 0;
+}
+/* my works - build website */
+#p-works .buildWeb {
+  margin: 150px 0;
+}
+#p-works .buildWeb .webGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+#p-works .buildWeb .webGrid .grid1 {
+  grid-column: 1 / span 5;
+  grid-row: 2 / span 4;
+}
+#p-works .buildWeb .webGrid .grid2 {
+  grid-column: 7 / span 7;
+  grid-row: 1 / span 5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#p-works .buildWeb .webGrid .grid2 .title-sm {
+  font-family: 'Dancing Script', cursive;
+}
+#p-works .buildWeb .webGrid .grid2 .font {
+  margin: 15px 0;
+  line-height: 1.2em;
+}
+#p-works .buildWeb .webGrid .grid3 {
+  grid-column: 15 / span 6;
+  grid-row: 1 / span 9;
+}
+#p-works .buildWeb .webGrid .grid4 {
+  grid-column: 5 / span 8;
+  grid-row: 7 / span 6;
+}
+#p-works .buildWeb .webGrid .grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Trip Guide */
+#p-works .tripGuide {
+  background-color: var(--color-beige);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+#p-works .tripGuide .imgBox {
+  width: 45%;
+}
+#p-works .tripGuide .imgBox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(241, 233, 229, 0.2);
+}
+#p-works .tripGuide .text {
+  width: 50%;
+  margin-left: 20px;
+}
+#p-works .tripGuide .title-sm {
+  font-family: 'Dancing Script', cursive;
+}
+#p-works .tripGuide .text .font {
+  margin: 15px 0;
+}
+/* link my site */
+#p-works .linkMysite {
+  position: relative;
+}
+#p-works .linkMysite .section__bg {
+  background: url(../images/works/freedom-4782870_1920.jpg) no-repeat center/cover;
+}
+#p-works .linkMysite .linkMysite__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#p-works .linkMysite .linkMysite__content .title-lg {
+  color: var(--color-white);
+  font-family: 'Dancing Script', cursive;
+}
+#p-works .linkMysite .linkMysite__content .font {
+  color: var(--color-white);
+  margin: 20px 0;
+  width: 50%;
+}
+
+
+/* ---------------------------------------------------------------
+-------------- PAGE - CONTACT ------------------------------------
+---------------------------------------------------------------- */
+#p-contact .section__bg {
+  padding-top: 35%;
+  background: url(../images/dollar-1443244_1920.jpg) no-repeat center/cover;
+}
+
+#p-contact .section__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#p-contact .section__title .title-lg {
+  color: var(--color-white);
+  font-size: 3em;
+}
+#p-contact .containerBox {
+  position: relative;
+}
+#p-contact .contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#p-contact .contact__form .title-sm {
+  margin: 80px 0 20px 0;
+}
+#p-contact .contact__form .title-sm,
+#p-contact .contact__form .font-sm {
+  text-align: center;
+}
+
+#p-contact .contact__form form {
+  width: 50%;
+  margin: 50px auto;
+}
+#p-contact .contact__form form .field {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2px;
+  position: relative;
+}
+#p-contact .contact__form form .field:last-of-type {
+  margin-bottom: 0;
+}
+#p-contact .contact__form form .field label {
+  width: 25%;
+  background-color: var(--color-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+#p-contact .contact__form form .field input,
+#p-contact .contact__form form .field select {
+  background-color: var(--color-beige);
+  flex: 1;
+  line-height: 1.6em;
+  padding: 0 12px;
+  border: none;
+  outline: none;
+  display: block;
+}
+#p-contact .contact__form form .field input[type="number"] {
+  text-align: right;
+}
+#p-contact .contact__form form .field textarea {
+  background-color: var(--color-beige);
+  border: none;
+  flex: 1;
+  padding: 0 12px;
+  outline: none;
+  resize: none;
+  line-height: 1.6em;
+}
+#p-contact .contact__form form .submit {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------
+-------------- PAGE - PORTFOLIO ----------------------------------
+---------------------------------------------------------------- */
+#p-portfolio .section__bg {
+  background: url(../images/portfolio/portfolio-bg.jpg) no-repeat center/cover;
+  padding-top: 30%;
+}
+
+#p-portfolio .section__bg .title {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#p-portfolio .section__bg .title .title-lg {
+  color: var(--color-white);
+  letter-spacing: 0.5em;
+}
+
+/* portfolio nav */
+#p-portfolio .containerBox {
+  padding: 80px 0;
+}
+#p-portfolio .portfolio__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#p-portfolio .portfolio__nav li {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 0 12px;
+}
+#p-portfolio .portfolio__nav li .btn-secondary {
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
+  padding: 7px 25px;
+  border-radius: 12px;
+}
+#p-portfolio .portfolio__nav li a.selected {
+  background-color: var(--color-navy);
+  color: var(--color-beige);
+}
+
+/* portfolio lists */
+#p-portfolio .portfolio__lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0 30px 0;
+  transition: all 0.3s ease-in;
+}
+
+#p-portfolio .portfolio__lists.ani-out {
+  opacity: 0.6;
+  transform: scale(0.96) translateY(40px);
+}
+#p-portfolio .portfolio__lists li {
+  width: 30%;
+  height: 0;
+  padding-top: 25%;
+  margin: 5px;
+  position: relative;
+  border: 5px solid var(--color-beige);
+}
+#p-portfolio .portfolio__lists li.project.invisible {
+  display: none;
+}
+
+#p-portfolio .portfolio__lists li .imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#p-portfolio .portfolio__lists li .list_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgba(241, 233, 229,0.9);
+  padding-right: 12px;
+  font-style: italic;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+#p-portfolio .portfolio__lists li:hover .list_info {
+  opacity: 1;
+  visibility: visible;
+}
+#p-portfolio .portfolio__lists li .list_info .font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+#p-portfolio .portfolio__lists li .list_info .font i {
+  font-size: 0.7em;
+  color: var(--color-teal);
+  margin-left: 5px;
+}
+
+

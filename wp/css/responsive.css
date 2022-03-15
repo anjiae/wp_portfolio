@@ -1,0 +1,237 @@
+@media all and (max-width: 1024px) {
+/* --------------------------------------------------------------
+----------------------- MAIN.CSS ------------------------------ */
+
+/* --------------------------------------------------------------
+--------------------- PAGE.CSS -------------------------------- */
+/* PAGE - ABOUT */
+#p-about .getInTouch .getInTouch__text {
+  width: 45%;
+}
+}
+
+
+/* 768px */
+@media all and (max-width: 768px) {
+/* --------------------------------------------------------------
+--------------------- COMMON.CSS ------------------------------ */
+.title-lg{
+  font-size: 2.1em;
+}
+.title-md{
+  font-size: 1.5em;
+}
+.title-sm{
+  font-size: 1.1em;
+}
+.font{
+  font-size: 0.9em;
+}
+/* --------------------------------------------------------------
+----------------------- MAIN.CSS ------------------------------ */
+/* INTRO */
+#intro .intro__menu .menu__lists li .textBox {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ABOUT */
+#about .about__contents {
+  flex-direction: column-reverse;
+  margin-top: 50px;
+}
+#about .about__contents .a__contents__text {
+  width: 90%;
+  margin-right: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Link */
+#link .link__contents .link__contents__text {
+  width: 95%;
+  padding: 30px;
+}
+
+/* --------------------------------------------------------------
+--------------------- PAGE.CSS -------------------------------- */
+/* PAGE - ABOUT */
+#p-about .profile {
+  flex-direction: column;
+}
+#p-about .profile .profile__text {
+  width: 90%;
+  margin-left: 0;
+  margin: 50px auto 0;
+}
+#p-about .getInTouch {
+  flex-direction: column-reverse;
+}
+#p-about .getInTouch .getInTouch__text {
+  width: 80%;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+#p-about .getInTouch .getInTouch__img {
+  width: 60%;
+}
+
+/* PAGE - WORKS */
+#p-works .works__description {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+#p-works .works__description .title {
+  position: relative;
+  order: 2;
+}
+#p-works .works__description .imgBox {
+  width: 70%;
+  order: 1;
+  margin-bottom: 30px;
+}
+#p-works .works__description .textBox {
+  width: 90%;
+  order: 3;
+  margin-top: 20px;
+}
+/* grid */
+#p-works .buildWeb .webGrid .grid1 {
+  grid-column: 1 / span 14;
+  grid-row: 1 / span 6;
+}
+#p-works .buildWeb .webGrid .grid2 {
+  grid-column: 1 / span 12;
+  grid-row: 5 / span 6;
+  z-index: 2;
+  background-color: var(--color-beige);
+}
+#p-works .buildWeb .webGrid .grid3 {
+  grid-column: 11 / span 10;
+  grid-row: 2/ span 4;
+}
+#p-works .buildWeb .webGrid .grid4 {
+  grid-column: 8 / span 13;
+  grid-row: 8 / span 5;
+}
+#p-works .tripGuide {
+  flex-direction: column;
+}
+#p-works .tripGuide .imgBox {
+  width: 80%;
+}
+#p-works .tripGuide .text {
+  width: 90%;
+  margin-left: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* PAGE - PORTFOLIO */
+#p-portfolio .portfolio__lists li {
+  width: 45%;
+  padding-top: 35%;
+}
+
+
+}
+
+
+
+
+
+/* 540px */
+@media all and (max-width: 540px) {
+/* --------------------------------------------------------------
+--------------------- COMMON.CSS ------------------------------ */
+.title-lg{
+  font-size: 1.7em;
+}
+.title-md{
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--color-navy);
+}
+.title-sm{
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--color-navy);
+}
+.font{
+  font-size: 0.8em;
+}
+.font-sm {
+  font-size: 0.7em;
+}
+/* --------------------------------------------------------------
+----------------------- MAIN.CSS ------------------------------ */
+/* HEADER */
+#header .header__nav >ul li.main-menu > a {
+  font-size: 0.9em;
+}
+/* INTRO */
+#intro .containerBox .title .title-lg {
+  font-size: 2em;
+}
+/* Link */
+#link .section__bg {
+  padding-top: 100%;
+}
+#link .link__contents .link__contents__text {
+  width: 95%;
+  padding: 20px;
+}
+
+
+/* --------------------------------------------------------------
+--------------------- PAGE.CSS -------------------------------- */
+/* PAGE - ABOUT */
+#p-about .profile .profile__imgs {
+  grid-template-columns: repeat(7, 35px);
+  grid-template-rows: repeat(5, 70px);
+}
+#p-about .profile .profile__text {
+  width: 90%;
+  margin-left: 0;
+  margin: 50px auto 0;
+}
+#p-about .experience .imgBox {
+  height: 100px;
+}
+
+
+/* PAGE - WORKS */
+#p-works .linkMysite .section__bg {
+  padding-top: 100%;
+}
+
+
+
+/* PAGE - CONTACT */
+#p-contact .section__title .title-lg {
+  font-size: 2em;
+}
+
+#p-contact .contact__form form {
+  width: 85%;
+}
+
+/* PAGE - PORTFOLIO */
+#p-portfolio .portfolio__nav li {
+  width: 100%;
+  margin: 0 20px 10px;
+}
+
+#p-portfolio .portfolio__lists li {
+  width: 90%;
+  padding-top: 60%;
+}
+
+}
+

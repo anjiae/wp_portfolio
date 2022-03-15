@@ -1,0 +1,228 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+
+
+body {
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#main {
+  position: relative;
+}
+
+/* ----------------- Color Scheme -------------------- */
+:root {
+  --color-navy: #464660;
+  --color-teal: #368B85;
+  --color-green: #B4B897;
+  --color-beige: #f1e9e5;
+  --color-white: #fff;
+}
+
+
+/* --------------- Skip to Content ------------------- */
+.skip_to_content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  transform: translateY(-100%);
+  z-index: 10000;
+}
+
+.skip_to_content:focus {
+  transform: translateY(0);
+}
+
+/* --------------- Logo & Typography ------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.4em;
+  letter-spacing: 0.025em;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.logo {
+  width: 120px;
+  padding: 4px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+}
+.title-lg {
+  font-size: 2.4em;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--color-navy);
+}
+.title-md {
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--color-navy);
+}
+.title-sm {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: var(--color-navy);
+}
+.font {
+  font-size: 1em;
+  line-height: 1em;
+  color: var(--color-navy);
+  font-family: 'Work Sans', sans-serif;
+}
+.font-sm {
+  font-size: 0.8em;
+  line-height: 1em;
+  color: var(--color-navy);
+  font-family: 'Work Sans', sans-serif;
+}
+/* -------------- Section & Container box --------------- */
+.section {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+.containerBox {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section__bg  {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56%;
+}
+.section__bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+.section__bg .videoBox,
+.section__bg .imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+.section__bg .videoBox video,
+.section__bg .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imgBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------------------- Sns icons ---------------------- */
+.social-icons {
+  display: flex;
+}
+.social-icons li {
+  margin-right: 5px;
+}
+.social-icons li:last-child {
+  margin-right: 0;
+}
+.social-icons li a {
+  color: var(--color-beige);
+}
+
+/* ----------------- Buttons & Links -------------------- */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-teal);
+  padding: 5px 22px;
+  border-radius: 14px;
+  color: var(--color-beige);
+  font-size: 0.8em;
+  text-align: center;
+}
+.btn-primary:hover {
+  background-color: var(--color-green);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: var(--color-beige);
+  padding: 5px 22px;
+  border-radius: 14px;
+  color: var(--color-navy);
+  font-size: 0.8em;
+  text-align: center;
+}
+.btn-secondary:hover {
+  color: var(--color-beige);
+  background-color: var(--color-navy);
+}
+
+
+/* ----------------- Custom Pagination -------------------- */
+
+.myPagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myPagination a {
+  color: var(--color-navy);
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0 7px;
+}
+
+.myPagination a:hover,
+.myPagination a.active {
+  color: var(--color-teal);
+}
+
+.myPagination span.active span {
+  color: var(--color-teal);
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0 7px;
+}
+.myPagination a.active,
+.myPagination span.active span {
+  text-decoration: underline;
+}
+
+.myPagination a i {
+  font-size: 1.2em;
+}

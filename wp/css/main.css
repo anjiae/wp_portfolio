@@ -1,0 +1,230 @@
+/* ---------------------------------------------------------------
+-------------HEADER : LOGO, NAVIGATION, SOCIAL ICONS--------------
+---------------------------------------------------------------- */
+#header {
+  width: 100%;
+  z-index: 99999;
+  position: relative;
+  background-color: var(--color-white);
+}
+#header .containerBox {
+  max-width: 100%;
+}
+#header .header__visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+#header .header__nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-navy);
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+#header .header__nav >ul li.main-menu {
+  margin-right: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#header .header__nav >ul li.main-menu:last-child {
+  margin-right: 0;
+}
+#header .header__nav >ul li.main-menu > a {
+  display: block;
+  padding: 0 6px;
+  color: var(--color-beige);
+  font-size: 1em;
+  font-weight: 600;
+}
+#header .header__nav >ul li.main-menu:hover,
+#header .header__nav >ul li.main-menu.open {
+  background-color: var(--color-teal);
+}
+
+/* sub-menu */
+#header .header__nav >ul li.main-menu .sub-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+  background-color: var(--color-teal);
+  display: flex;
+  justify-content: center;
+}
+#header .header__nav ul li.main-menu .sub-menu li a {
+  font-size: 0.85em;
+  display: block;
+  padding: 5px 12px;
+  color: var(--color-beige);
+  font-weight: 600;
+}
+#header .header__nav ul li.main-menu .sub-menu li:hover a {
+  text-decoration: underline;
+}
+
+
+#header .header__nav ul li.main-menu.open .sub-menu {
+  top : 100%;
+  opacity: 1;
+  visibility: visible;
+  
+}
+/* ---------------------------------------------------------------
+---------- MAIN : INTRO, ABOUT, SERVICES, PORTFOLIO --------------
+---------------------------------------------------------------- */
+/* INTRO */
+#intro .containerBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .containerBox .title .title-lg {
+  color: var(--color-white);
+  font-size: 3em;
+}
+/* ABOUT */
+#about {
+  position: relative;
+  padding: 120px 0;
+}
+#about .about__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+#about .about__contents .a__contents__text {
+  width: 35%;
+  margin-right: 30px;
+}
+#about .about__contents .a__contents__text .font {
+  margin: 20px 0;
+}
+#about .about__contents .a__contents__text .text .font.sign {
+  margin-top: 25px;
+  text-align: right;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6em;
+}
+#about .about__contents .a__contents__img {
+  width: 50%;
+  position: relative;
+}
+#about .about__contents .a__contents__img::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-beige);
+}
+
+/* Link */
+#link .link__contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#link .link__contents .link__contents__text {
+  width: 50%;
+  background-color: var(--color-white);
+  padding: 50px;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+#link .link__contents .link__contents__text .title-md.sign {
+  font-family: 'Dancing Script', cursive;
+}
+#link .link__contents .link__contents__text .font {
+  margin: 20px 0;
+}
+/* ---------------------------------------------------------------
+-------------- FOOTER --------------------------------------------
+---------------------------------------------------------------- */
+#footer {
+  width: 100%;
+  background-color: var(--color-navy);
+  position: relative;
+}
+#footer .foot--contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+/* footer instagram */
+#footer .foot--contents .f_gallery .galleries .title .title-sm {
+  margin-bottom: 15px;
+  color: var(--color-beige);
+}
+#footer .foot--contents .f_gallery .galleries .gallery--lists {
+  display: flex;
+  justify-content: center;
+}
+#footer .foot--contents .f_gallery .galleries .gallery--lists li {
+  width: 12%;
+  margin: 2px;
+  position: relative;
+  cursor: pointer;
+}
+#footer .foot--contents .f_gallery .galleries .gallery--lists li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-beige);
+  font-family: 'Work Sans', sans-serif;
+}
+#footer .foot--contents .f_gallery .galleries .gallery--lists li:hover::before {
+  content: 'view';
+  background-color: rgba(0,0,0, 0);
+}
+#footer .foot--contents .f_gallery .galleries .gallery--lists li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#footer .foot--contents .f__info {
+  margin: 10px 0;
+}
+#footer .foot--contents .f__info .font-sm {
+  color: var(--color-beige);
+}
+
+#footer .copyright {
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--color-beige);
+}
