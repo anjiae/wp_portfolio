@@ -45,7 +45,7 @@
       <div class="text">
         <h3 class="title-md">Various Experience</h3>
         <p class="font">I am currently working as a freelancer to build websites using wordpress.</p>
-        <p class="font">I manage the website</p>
+        <p class="font">Also I manage the website and always</p>
         <p class="font">I aim for perfection and accuracy.</p>
         <a href="https://portfolio.angielife.com/main/works/" class="btn-secondary">View My works ></a>
       </div>
