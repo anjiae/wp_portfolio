@@ -6,7 +6,6 @@
     </div>
   </div>
   <div class="containerBox">
-    <h3>아카이브 포트폴리오 페이지</h3>
     <ul class="portfolio__nav">
       <li><a href="#" class="btn-secondary selected" data-filter="*">All</a></li>
       <?php
