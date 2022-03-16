@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
   <!-- Skip -->
-  <a href="#main" class="skip_to_content">본문 내용으로 바로가기</a>
+  <a href="#main" class="skip_to_content">Go to main contents</a>
   <div id="wrap">
     <!-- HEADER -->
     <header id="header">
